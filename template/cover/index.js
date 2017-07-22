@@ -12,5 +12,6 @@ function <%- $$.convertUrl(mock.url) %> (opts) {
 
 <% }) %>
 export {
-    <% _.forEach(data.mocks, function(mock, i){ %><%- $$.convertUrl(mock.url) %> <% if(data.mocks.length - 1 !== i) { %>, <% } %><% }) %>
+    <% _.forEach(data.mocks, function(mock, i){ %><%- $$.convertUrl(mock.url) %><% if(data.mocks.length - 1 !== i) { %>,
+    <% } %><% }) %>
 };
